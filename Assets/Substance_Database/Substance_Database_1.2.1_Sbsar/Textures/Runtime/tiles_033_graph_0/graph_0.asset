@@ -1,0 +1,523 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed5864476f84ce4b85454db09ca4eaa, type: 3}
+  m_Name: graph_0
+  m_EditorClassIdentifier: 
+  AssetPath: Assets/Substance_Database/Substance_Database_1.2.1_Sbsar/Textures/Runtime/tiles_033.sbsar
+  RawData: {fileID: -244192453324840774, guid: dca5bb18171a33b44b689d1da5ca38fd, type: 3}
+  Name: graph_0
+  IsRoot: 1
+  FlagedForDelete: 0
+  GUID: c89ac772-8d09-494d-9c1a-ba257a8a399e
+  Index: 0
+  Input:
+  - rid: 5282590880325173697
+  - rid: 5282590880325173698
+  - rid: 5282590880325173699
+  - rid: 5282590880325173700
+  - rid: 5282590880325173701
+  - rid: 5282590880325173702
+  - rid: 5282590880325173703
+  - rid: 5282590880325173704
+  - rid: 5282590880325173705
+  - rid: 5282590880325173706
+  - rid: 5282590880325173707
+  - rid: 5282590880325173708
+  - rid: 5282590880325173709
+  - rid: 5282590880325173710
+  - rid: 5282590880325173711
+  - rid: 5282590880325173712
+  - rid: 5282590880325173713
+  - rid: 5282590880325173714
+  - rid: 5282590880325173715
+  Output:
+  - Index: 0
+    VirtualOutputIndex: 4
+    Description:
+      Identifier: Diffuse
+      Label: Diffuse
+      Index: 0
+      Type: 8
+      Channel: diffuse
+    OutputTexture: {fileID: 0}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _BaseMap
+  - Index: 1
+    VirtualOutputIndex: 5
+    Description:
+      Identifier: Specular
+      Label: Specular
+      Index: 1
+      Type: 8
+      Channel: specular
+    OutputTexture: {fileID: 0}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _SpecGlossMap
+  - Index: 2
+    VirtualOutputIndex: 6
+    Description:
+      Identifier: Normal
+      Label: Normal
+      Index: 2
+      Type: 8
+      Channel: normal
+    OutputTexture: {fileID: 0}
+    sRGB: 0
+    IsVirtual: 0
+    IsAlphaAssignable: 0
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _BumpMap
+  - Index: 3
+    VirtualOutputIndex: 7
+    Description:
+      Identifier: Height
+      Label: Height
+      Index: 3
+      Type: 8
+      Channel: height
+    OutputTexture: {fileID: 0}
+    sRGB: 1
+    IsVirtual: 0
+    IsAlphaAssignable: 1
+    AlphaChannel: 
+    InvertAssignedAlpha: 0
+    Flags: 0
+    MaterialTextureTarget: _ParallaxMap
+  HasPhysicalSize: 0
+  PhysicalSize: {x: 0, y: 0, z: 0}
+  EnablePhysicalSize: 0
+  Thumbnail: 
+  CurrentStatePreset: 
+  IsRuntimeOnly: 0
+  GenerateAllOutputs: 0
+  GenerateAllMipmaps: 1
+  OutputMaterial: {fileID: 0}
+  DefaultPreset: " <sbspreset pkgurl=\"pkg://tiles_033\" label=\"\" >\n  <presetinput
+    identifier=\"$outputsize\" uid=\"974716941\" type=\"8\" value=\"10,10\" />\n
+    </sbspreset>\n"
+  MaterialShader: 
+  RenderTextures: 0
+  OutputRemaped: 0
+  Presets: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5282590880325173697
+      type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 0
+        Description:
+          Identifier: $outputsize
+          Label: $outputsize
+          GuiGroup: 
+          GuiDescription: 
+          Type: 5
+          WidgetType: 0
+        Data: {x: 10, y: 10}
+        NumericalDescription:
+          DefaultValue: {x: 8, y: 8}
+          MinValue: {x: 0, y: 0}
+          MaxValue: {x: 1, y: 1}
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173698
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 1
+        Description:
+          Identifier: $randomseed
+          Label: $randomseed
+          GuiGroup: 
+          GuiDescription: 
+          Type: 4
+          WidgetType: 0
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173699
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 2
+        Description:
+          Identifier: Normal_Intensity
+          Label: Normal Intensity
+          GuiGroup: Basic parameters
+          GuiDescription: 'Set the normal map strenght intensity.
+
+            0
+            = Null
+
+            1 = Maximum Intensity'
+          Type: 0
+          WidgetType: 1
+        Data: 0.5
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173700
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 3
+        Description:
+          Identifier: Lighting_Intensity
+          Label: Lighting intensity
+          GuiGroup: Basic parameters
+          GuiDescription: 'Set the intensity of the diffuse map pre-lighting.
+
+            0
+            = Albedo Map
+
+            1 = Full lighted diffuse'
+          Type: 0
+          WidgetType: 1
+        Data: 0.5
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173701
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 4
+        Description:
+          Identifier: Lighting_Angle
+          Label: Lighting Angle
+          GuiGroup: Basic parameters
+          GuiDescription: 'Set the angle of the diffuse prelighting.
+
+            By
+            default lighted from top left.'
+          Type: 0
+          WidgetType: 2
+        Data: 0.125
+        NumericalDescription:
+          DefaultValue: 0.125
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173702
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 5
+        Description:
+          Identifier: Hue_Shift
+          Label: Hue Shift
+          GuiGroup: Basic parameters
+          GuiDescription: Set diffuse map hue offset.
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173703
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 6
+        Description:
+          Identifier: Saturation
+          Label: Saturation
+          GuiGroup: Basic parameters
+          GuiDescription: Set diffuse map saturation.
+          Type: 0
+          WidgetType: 1
+        Data: 0.5
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173704
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 7
+        Description:
+          Identifier: Luminosity
+          Label: Luminosity
+          GuiGroup: Basic parameters
+          GuiDescription: Set diffuse map luminosity.
+          Type: 0
+          WidgetType: 1
+        Data: 0.5
+        NumericalDescription:
+          DefaultValue: 0.5
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173705
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 8
+        Description:
+          Identifier: Contrast
+          Label: Contrast
+          GuiGroup: Basic parameters
+          GuiDescription: Set the diffuse map contrast
+          Type: 0
+          WidgetType: 1
+        Data: 0
+        NumericalDescription:
+          DefaultValue: 0
+          MinValue: -1
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173706
+      type: {class: SubstanceInputFloat3, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 9
+        Description:
+          Identifier: Color_1
+          Label: Color #1
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 2
+          WidgetType: 3
+        Data: {x: 0.521599, y: 0.459495, z: 0.388602}
+        NumericalDescription:
+          DefaultValue: {x: 0.521599, y: 0.459495, z: 0.388602}
+          MinValue: {x: 0, y: 0, z: 0}
+          MaxValue: {x: 1, y: 1, z: 1}
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173707
+      type: {class: SubstanceInputFloat3, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 10
+        Description:
+          Identifier: Color_2
+          Label: Color #2
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 2
+          WidgetType: 3
+        Data: {x: 0.227497, y: 0.149004, z: 0.117601}
+        NumericalDescription:
+          DefaultValue: {x: 0.227497, y: 0.149004, z: 0.117601}
+          MinValue: {x: 0, y: 0, z: 0}
+          MaxValue: {x: 1, y: 1, z: 1}
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173708
+      type: {class: SubstanceInputFloat3, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 11
+        Description:
+          Identifier: Concrete_Color
+          Label: Concrete_Color
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 2
+          WidgetType: 3
+        Data: {x: 0.886275, y: 0.87451, z: 0.858824}
+        NumericalDescription:
+          DefaultValue: {x: 0.886275, y: 0.87451, z: 0.858824}
+          MinValue: {x: 0, y: 0, z: 0}
+          MaxValue: {x: 1, y: 1, z: 1}
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173709
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 12
+        Description:
+          Identifier: TIle_number
+          Label: Tile Number
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 15
+        NumericalDescription:
+          DefaultValue: 15
+          MinValue: 5
+          MaxValue: 40
+          SliderStep: 1
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173710
+      type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 13
+        Description:
+          Identifier: Concrete_Scale
+          Label: Concrete Scale
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 4
+          WidgetType: 1
+        Data: 9
+        NumericalDescription:
+          DefaultValue: 9
+          MinValue: 7
+          MaxValue: 50
+          SliderStep: 1
+          SliderClamp: 0
+          LabelFalse: 
+          LabelTrue: 
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173711
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 14
+        Description:
+          Identifier: Concrete_amount
+          Label: Concrete Amount
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.9
+        NumericalDescription:
+          DefaultValue: 0.9
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173712
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 15
+        Description:
+          Identifier: Details
+          Label: Details
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.88
+        NumericalDescription:
+          DefaultValue: 0.88
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173713
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 16
+        Description:
+          Identifier: Tile_Lightness
+          Label: Tile Lightness
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.38
+        NumericalDescription:
+          DefaultValue: 0.38
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173714
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 17
+        Description:
+          Identifier: Tile_Height
+          Label: Tile Height
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 1
+        NumericalDescription:
+          DefaultValue: 1
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []
+    - rid: 5282590880325173715
+      type: {class: SubstanceInputFloat, ns: Adobe.Substance.Input, asm: Adobe.Substance}
+      data:
+        Index: 18
+        Description:
+          Identifier: Tile_Wear
+          Label: Tile Wear
+          GuiGroup: Advanced parameters
+          GuiDescription: 
+          Type: 0
+          WidgetType: 1
+        Data: 0.48
+        NumericalDescription:
+          DefaultValue: 0.48
+          MinValue: 0
+          MaxValue: 1
+          SliderStep: 0.01
+          SliderClamp: 0
+          EnumValueCount: 0
+          EnumValues: []

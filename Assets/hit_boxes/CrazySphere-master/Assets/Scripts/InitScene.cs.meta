@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7e8e2d41069297644b4f1b983f1dbfe1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cubeTexture: {fileID: 2800000, guid: 4c4c346a9491de64d9830081896ca381, type: 3}
+  - sphereTexture: {fileID: 2800000, guid: 8c125948a1ea4dd4da73ddeae05db487, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
